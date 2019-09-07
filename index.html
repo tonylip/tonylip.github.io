@@ -1,32 +1,37 @@
-# -*- coding: utf-8 -*-
+## Welcome to GitHub Pages
 
-from contextlib import suppress
+You can use the [editor on GitHub](https://github.com/tonylip/text/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-from adaptive.learner.average_learner import AverageLearner
-from adaptive.learner.balancing_learner import BalancingLearner
-from adaptive.learner.base_learner import BaseLearner
-from adaptive.learner.data_saver import DataSaver, make_datasaver
-from adaptive.learner.integrator_learner import IntegratorLearner
-from adaptive.learner.learner1D import Learner1D
-from adaptive.learner.learner2D import Learner2D
-from adaptive.learner.learnerND import LearnerND
-from adaptive.learner.sequence_learner import SequenceLearner
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-__all__ = [
-    "AverageLearner",
-    "BalancingLearner",
-    "BaseLearner",
-    "DataSaver",
-    "make_datasaver",
-    "IntegratorLearner",
-    "Learner1D",
-    "Learner2D",
-    "LearnerND",
-    "SequenceLearner",
-]
+### Markdown
 
-with suppress(ImportError):
-    # Only available if 'scikit-optimize' is installed
-    from adaptive.learner.skopt_learner import SKOptLearner  # noqa: F401
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-    __all__.append("SKOptLearner")
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tonylip/text/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
